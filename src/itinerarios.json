@@ -1,0 +1,176 @@
+{
+    "ciencias-natureza": [
+        {
+            "name": "Agronomia",
+            "description": "O profissional formado em Agronomia pode trabalhar no manejo sustentável dos recursos naturais, atuando desde o plantio ou criação do rebanho até a comercialização da produção.",
+            "salary": "R$ 4959,00"
+        },
+        {
+            "name": "Ciências biológicas",
+            "description": "Ciências Biológicas – ou Biologia – é oferecido em dois tipos de formação: o bacharelado e a licenciatura. O bacharelado forma profissionais que vão atuar diretamente em empresas de pesquisa, desenvolvimento e aplicação de processos biológicos. A licenciatura forma professores para o ensino fundamental e médio.",
+            "salary": "R$ 2127,04"
+        },
+        {
+            "name": "Engenharia ambiental",
+            "description": "Este ramo de engenharia é voltado para o desenvolvimento sustentável da sociedade. O profissional desta área deve detectar problemas atuais ou futuros gerados no meio ambiente por qualquer atividade humana, determinando procedimentos e/ou tecnologias para sanar o problema ou diminuir seus efeitos.",
+            "salary": "R$ 4328,00"
+        },
+        {
+            "name": "Gestão ambiental",
+            "description": "O oceanógrafo investiga as características dos oceanos, mares, rios, lagos e zonas costeiras, desde a sua descrição física até a interpretação dos fenômenos que neles se verificam. Desta forma, o profissional pesquisa, coleta, analisa e interpreta informações sobre os animais e vegetais, o ambiente e os processos marinhos. Desenvolvendo técnicas de exploração dos recursos naturais e minerais dos mares e rios e avaliando os efeitos das atividades humanas neste ecossistema.",
+            "salary": "R$ 3584,00"
+        },
+        {
+            "name": "Oceanografia",
+            "description": "Este profissional tem o papel de lidar com planejamento de recursos de uma corporação, utilizando técnicas e conhecimentos para garantir o uso racional de recursos naturais e preservando a biodiversidade.",
+            "salary": "R$ 2416,00"
+        },
+        {
+            "name": "Zootecnia",
+            "description": "Nesta carreira, o profissional atua para gerar maior produtividade e rentabilidade na criação de animais e no aproveitamento de seus produtos, tais como: carne, ovos, leite e seus derivados. O zootécnico deve se envolver desde o cuidado com a saúde do rebanho até a pesquisa para promover melhoramento genético dos animais e raças e consequentemente aumentar a produtividade das criações.",
+            "salary": "R$ 2121,00"
+        }
+
+    ], 
+    "ciencias-linguagens": [
+        {
+            "name": "Jornalismo",
+            "description": "O profissional formado no curso de Jornalismo é responsável por buscar, investigar, redigir e transmitir notícias, através dos meios de comunicação (jornais, revistas, internet, televisão, etc.). O jornalista participa ativamente de todos os processos de produção de notícias como, por exemplo: a investigação, apuração, organização, resumo e a redação.",
+            "salary": "R$ 2100,00"
+        },
+        {
+            "name": "Artes Cênicas",
+            "description": "As Artes Cênicas são o conjunto de técnicas utilizadas para criação, direção, montagem e interpretação de espetáculos. O profissional utiliza os movimentos corporais e voz para desenvolver e representar personagens que transmitem uma história, ideias ou sentimentos para o público.",
+            "salary": "R$ 1980,00"
+        }
+    ],
+    "ciencias-humanas": [
+        {
+            "name": "Arqueologia",
+            "description": "O arqueólogo estuda as sociedades e culturas humanas por meio de objetos fabricados e utilizados no passado. ... Com conhecimento de história, ele investiga e escava sítios arqueológicos e observa marcas deixadas num território com o objetivo de entender como ele foi ocupado.",
+            "salary": "R$ 3133,00"
+        },
+        {
+            "name": "Filosofia",
+            "description": "O filósofo investiga e questiona a essência e a natureza do universo, do homem e de fatos, por meio de análise, reflexão e crítica. Este bacharel estuda as grandes correntes do pensamento e a obra dos principais filósofos. Ele reflete sobre questões éticas, morais, políticas, metafísicas e epistemológicas, além de buscar compreensão teórica de conceitos, como os de espaço, o tempo e a verdade.",
+            "salary": "R$ 2000,00"
+        },
+        {
+            "name": "História",
+            "description": "O profissional de História é responsável pela compreensão, análise e interpretação de figuras históricas, utilizando o atual contexto social para reconstrução do acontecimento, ou seja, o seu trabalho vai muito além da memorização de datas e nomes. Ele também contribui para a transformação da sociedade e, mais especificamente, com a educação de alunos em escolas e universidades.",
+            "salary": "R$ 2000,00"
+        },
+        {
+            "name": "Pedagogia",
+            "description": "O pedagogo é o profissional que atua em processos relacionados ao ensino e aprendizagem. Seu trabalho está intimamente ligado ao do professor e é considerado como um apoio educacional. Ele é especialista em educação e associa o aprendizado às questões sociais e à realidade em que o estudante se encontra.",
+            "salary": "R$ 2557,00"
+        },
+        {
+            "name": "Relações internacionais",
+            "description": "O profissional formado em Relações Internacionais contribui para que diferentes países possam se relacionar de maneira construtiva. O motivo dessa relação pode ser comercial, político, econômico, para estabelecer acordos bilaterais ou multilaterais, entre outros.",
+            "salary": "R$ 3445,00"
+        },
+        {
+            "name": "Teologia",
+            "description": "A Teologia é uma ciência que estuda as religiões, seus textos sagrados, rituais, dogmas e doutrinas. Estuda o contexto histórico em que cada uma está inserida e as tradições religiosas de diferentes grupos sociais. Mais do que compreender as diferentes práticas religiosas, a Teologia se preocupa com os efeitos destas crenças nos indivíduos e na sociedade. Para entender a influência que a religião causa na vida das pessoas, o teólogo procura fazer a ligação entre a religião e outras áreas do conhecimento, principalmente na área das ciências humanas, como a Sociologia, Antropologia e Psicologia. ",
+            "salary": "R$ 2113,00"
+        },
+        {
+            "name": "Ciências sociais",
+            "description": "Um cientista social, título que é dado ao profissional formado em Ciências Sociais, estudam fenômenos da sociedade, tais como: migração, conflitos sociais e movimentos políticos. ... Suas pesquisas podem ser direcionadas a três diferentes áreas: Antropologia, Sociologia e Ciências Políticas.",
+            "salary": "R$ 3077,00"
+        },
+        {
+            "name": "Geografia",
+            "description": "O profissional formado em Geografia é conhecido como geógrafo. A Geografia tem como objeto de estudo a superfície terrestre e seus fenômenos, bem como a relação humana com essa superfície... Na indústria, o geógrafo pode trabalhar com cartografia digital, elaborando mapas a partir de imagens de satélites.",
+            "salary": "R$ 3000,00"
+        },
+        {
+            "name": "Letras",
+            "description": "O graduado em Letras dedica-se ao estudo da língua portuguesa e de idiomas estrangeiros e suas respectivas literaturas. Ele pesquisa e ensina português, inglês, espanhol ou outro idioma e sua literatura.",
+            "salary": "R$ 1861,00"
+        },
+        {
+            "name": "Serviço social",
+            "description": "Seja no campo empresarial ou em outras formas de exercício profissional o assistente social, formado pelo curso de Serviço Social, tem como objetivo amparar pessoas que de alguma forma não tem total acesso à cidadania, ajudando-os a resolver problemas ligados a educação, habitação, emprego, saúde. É uma profissão de cunho assistencial, ou seja, voltada para a promoção do bem-estar físico, psicológico e social.",
+            "salary": "R$ 2425,00"
+        }
+    ],
+    "ciencias-matematicas": [
+        {
+            "name": "Administração",
+            "description": "O profissional dessa área é o responsável por gerenciar recursos materiais, humanos e financeiros de instituições públicas e privadas. Em seu trabalho, o administrador utiliza os fundamentos matemáticos para aprimorar o desenvolvimento da empresa, buscando formas de minimizar os custos e maximizar o retorno financeiro. Cabe a ele identificar problemas e soluções, tendo capacidade de liderar a equipe.",
+            "salary": "R$ 2400,00"
+        },
+        {
+            "name": "Ciências Contábeis",
+            "description": "O contador é o responsável pelos números da empresa e, por isso, tem de considerar cuidadosamente os gastos e despesas, projetando-os em contextos regionais, nacionais e internacionais. Assim, cabe a ele fazer os registros de todos os capitais do negócio para interpretar o estado financeiro e auxiliar nas decisões mercadológicas. Qual a melhor hora de investir? É o momento da empresa se expandir? Como minimizar os efeitos de uma crise? Ele pode atuar ainda como consultor e auditor, prevendo em combatendo fraudes e práticas ilícitas.",
+            "salary": "R$ 4631,00"
+        },
+        {
+            "name": "Automação industrial",
+            "description": "O profissional dessa área é o responsável por projetar equipamentos e desenvolver os componentes robóticos que são essenciais para a modernização de fábricas que constroem automóveis, aviões, computadores e quaisquer tipos de aparelhos eletrônicos.O profissional de Automação Industrial atua ainda na produção e instalação de softwares, bem como na programação e manutenção das diversas máquinas que compõem uma linha de produção.",
+            "salary": "R$ 2000,00"
+        },
+        {
+            "name": "Arquitetura e Urbanismo",
+            "description": "O arquiteto é o profissional responsável por planejar e organizar os espaços internos e externos onde as pessoas vão morar, trabalhar e ter seu lazer como em museus, cinemas e teatros. O objetivo desse profissional é tornar o projeto arquitetônico funcional, confortável e bonito sem agredir o meio ambiente.",
+            "salary": "R$ 6489,00"
+        },
+        {
+            "name": "Engenharia Civil",
+            "description": "O engenheiro civil é o profissional que elabora, fiscaliza e executa projetos de edificações de forma geral, como prédios e casas, além de outras obras relevantes para a estrutura da cidade, como viadutos, túneis, pontes etc. Esse profissional pode atuar em construtoras, prestando serviço para o setor público ou privado, além de consultorias.",
+            "salary": "R$ 7737,00"
+        },
+        {
+            "name": "Engenharia Elétrica",
+            "description": "O bacharel em Engenharia Elétrica é o profissional responsável pelo planejamento, execução e manutenção de redes de distribuição de energia elétrica. O engenheiro eletricista pode atuar em indústrias ou empresas estatais ou privadas, como hidrelétricas, usinas de energia nuclear, termelétricas, distribuidoras de energia, entre outras.",
+            "salary": "R$ 8000,00"
+        },
+        {
+            "name": "Engenharia Mecânica",
+            "description": "A Engenharia Mecânica é o ramo da engenharia que cuida do projeto, construção, análise, operação e manutenção de sistemas mecânicos. O engenheiro mecânico é responsável por projetar e desenvolver motores, veículos, máquinas e sistemas termodinâmicos para todo tipo de indústria.",
+            "salary": "R$ 6189,00"
+        },
+        {
+            "name": "Engenharia de sistemas",
+            "description": "É a engenharia que desenvolve sistemas tecnológicos complexos – que integram outros sistemas e envolvem grande quantidade de variáveis. Este engenheiro está apto a atuar na análise, no projeto e na integração de sistemas complexos e também em sistemas de empresas industriais e comerciais, procurando otimizar seu funcionamento.",
+            "salary": "R$ 8372,00"
+        },
+        {
+            "name": "Engenharia aeroespacial",
+            "description": "A Engenharia Aeroespacial é o ramo da Engenharia que lida com projeto, construção e manutenção de aeronaves, veículos espaciais, foguetes e satélites. Também está ligada ao gerenciamento das atividades que ocorrem no espaço e aos sistemas de coordenação do tráfego aéreo.",
+            "salary": "R$ 5340,00"
+        },
+        {
+            "name": "Física",
+            "description": "O físico estuda a relação entre matéria e energia, suas propriedades e as leis que regem sua interação. Lida com corpos e fenômenos físicos de todas as dimensões, de partículas subatômicas à imensidão do cosmo. Pode especializar-se em diversas áreas, como acústica, astrofísica e física nuclear.",
+            "salary": "R$ 5000,00"
+        },
+        {
+            "name": "Logística",
+            "description": "O especialista em logística é responsável pela administração de materiais e recursos usados em uma empresa. Controla o estoque e a armazenagem, planeja a movimentação interna e a distribuição entre fábricas, centros de distribuição e varejo. Comunica-se com fornecedores e clientes e opera sistemas eletrônicos.",
+            "salary": "R$ 2332,00"
+        },
+        {
+            "name": "Economia",
+            "description": "O economista faz previsões econômicas para empresas, participa da elaboração de planejamentos, cuida dos cálculos econômicos (custos, rentabilidade, consumo, gastos, etc), planeja aplicações financeiras e elabora perspectivas macro e microeconômicas.",
+            "salary": "R$ 3151,00"
+        },
+        {
+            "name": "Ciência da computação",
+            "description": "O cientista da computação é o profissional da área da informática que domina as técnicas necessárias para desenvolver programas e softwares com as mais diversas aplicações e funcionalidades. Compreender e aplicar os fundamentos de linguagem de programação é algo essencial em sua rotina de trabalho, o que exige bastante habilidade com a Matemática.",
+            "salary": "R$ 8123,00"
+        },
+        {
+            "name": "Biomedicina",
+            "description": "O biomédico é o profissional que destrincha doenças, ao identificar e estudar microorganismos. É ele quem prepara o terreno para o tratamento de enfermidades ao abastecer médicos com informações sobre bactérias e fungos que causam patologias.",
+            "salary": "R$ 2376,00"
+        },
+        {
+            "name": "Matemática",
+            "description": "O matemático usa a lógica na formulação de teorias e no teste de hipóteses. Desenvolve aplicações dos cálculos na pesquisa pura e na ciência aplicada. Cria fórmulas e bancos de dados para interpretar e solucionar problemas de desenvolvimento de produtos, de produção e de logística em empresas.",
+            "salary": "R$ 1958,00"
+        }
+    ]
+}
