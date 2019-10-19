@@ -1,13 +1,19 @@
 import {prop, Typegoose} from 'typegoose';
 
-enum ItinerarioType {
-    'ciencias-humanas' = 'ciencias-humanas',
+export enum ItinerarioType {
+    'ciencias-matematicas' = 'ciencias-matematicas',
+    'ciencias-natureza' = 'ciencias-natureza',
+    'ciencias-humanas-sociais' = 'ciencias-humanas-sociais',
+    'ciencias-linguagens' = 'ciencias-linguagens',
 }
 
 class GamificationLevel {
     @prop({
         enum: [
             ItinerarioType['ciencias-humanas'],
+            ItinerarioType['ciencias-linguagens'],
+            ItinerarioType['ciencias-matematicas'],
+            ItinerarioType['ciencias-natureza'],
         ],
     })
     itinerarioType: ItinerarioType;
@@ -24,7 +30,18 @@ class StudentAnswer {
     questionId: string;
 
     @prop()
-    questionResponseId: string;
+    questionAnswerId: string;
+
+    @prop()
+    weight: number;
+
+    @prop({enum: [
+        ItinerarioType['ciencias-humanas'],
+        ItinerarioType['ciencias-linguagens'],
+        ItinerarioType['ciencias-matematicas'],
+        ItinerarioType['ciencias-natureza'],
+    ]})
+    category: ItinerarioType;
 }
 
 export class Student extends Typegoose {

@@ -12,5 +12,8 @@ import { Question } from './models/question';
         TypegooseModule.forFeature([Question]),
     ],
     controllers: [QuestionController],
+    exports: [
+        QuestionService,
+    ]
 })
 export class QuestionModule {}

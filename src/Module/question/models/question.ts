@@ -1,4 +1,5 @@
 import {prop, Typegoose, Ref, arrayProp} from 'typegoose';
+import { ItinerarioType } from './../../student/models/student';
 
 enum QuestionType {
     'text' = 'text',
@@ -11,20 +12,23 @@ enum QuestionResponseType {
     'multiple-choice' = 'multiple-choice',
 }
 
-class Answer {
+export class Answer {
     @prop()
     answerName: string;
 
     @prop()
     id: string;
+
+    @prop()
+    weight: number;
 }
 
-class QuestionResponse {
+export class QuestionResponse {
     @prop({enum: [QuestionResponseType['multiple-choice'], QuestionResponseType['yes-not']]})
     type: QuestionResponseType;
 
     @prop()
-    possibleAnswers?: Answer[];
+    possibleAnswers: Answer[];
 
     @prop()
     correctAnswer: string;
@@ -41,15 +45,20 @@ export class Question extends Typegoose {
     @prop({required: true})
     attachment?: string;
 
+    @prop({enum: [
+        ItinerarioType['ciencias-humanas'],
+        ItinerarioType['ciencias-linguagens'],
+        ItinerarioType['ciencias-matematicas'],
+        ItinerarioType['ciencias-natureza'],
+    ], required: true})
+    category: ItinerarioType;
+
     @prop()
     teacher: string;
-
-    @prop({required: true})
-    weight: number;
 
     @prop({required: true})
     gamificationXp: number;
 
     @prop()
-    questionResponses?: QuestionResponse[];
+    questionResponse: QuestionResponse;
 }

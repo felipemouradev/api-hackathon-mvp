@@ -1,5 +1,6 @@
 import { Controller, Get, Delete, Param, Body, Post } from '@nestjs/common';
 import { StudentService } from './student.service';
+import { CreateStudentRequest } from './interfaces/interfaces';
 
 @Controller('students')
 export class StudentController {
@@ -17,13 +18,21 @@ export class StudentController {
         return this.studentService.findAll({});
     }
 
-    @Get('/:sutdentId')
-    getOne(@Param('sutdentId') sutdentId: string) {
-        return this.studentService.findById(sutdentId);
+    @Get('/:studentId')
+    getOne(@Param('studentId') studentId: string) {
+        return this.studentService.findById(studentId);
     }
 
-    @Delete('/:sutdentId')
-    deleteOne(@Param('sutdentId') sutdentId: string) {
-        return this.studentService.delete(sutdentId);
+    @Delete('/:studentId')
+    deleteOne(@Param('studentId') studentId: string) {
+        return this.studentService.delete(studentId);
+    }
+
+    @Post('/:studentId/answers')
+    createAnswer(
+        @Body() body: CreateStudentRequest,
+        @Param('studentId') studentId: string,
+    ) {
+        return this.studentService.createAnswer(studentId, body);
     }
 }
