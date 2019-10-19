@@ -20,7 +20,8 @@
     "no-angle-bracket-type-assertion": false,
     "curly": false,
     "array-type": false,
-    "no-shadowed-variable": false
+    "no-shadowed-variable": false,
+    "max-classes-per-file": false
   },
   "rulesDirectory": []
 }
