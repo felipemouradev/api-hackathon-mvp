@@ -29,7 +29,6 @@ class QuestionResponse {
 // Collection Student begin
 enum ItinerarioType {
     'ciencia-humana',
-    // Outros itinerarios
 }
 
 class GamificationLevel {
@@ -44,13 +43,8 @@ class Student {
     level: Array<GamificationLevel>;
 }
 
-// Collection Student end
-
-// Collection StudentAnswers begin
-
 class StudentAnswer {
     studentId: string;
     questionResponseId: string;
+    question
 }
-
-// Collection StudentAnswers end

@@ -4,11 +4,10 @@ import {
     Param,
     Post,
     Body,
+    Delete,
 } from '@nestjs/common';
-import {ApiUseTags, ApiImplicitParam, ApiBearerAuth} from '@nestjs/swagger';
 import { QuestionService } from './question.service';
 
-@ApiBearerAuth()
 @Controller('questions')
 export class QuestionController {
     constructor(
@@ -16,7 +15,22 @@ export class QuestionController {
     ) {}
 
     @Post('/')
-    async create(@Body() body: any) {
+    create(@Body() body: any) {
         return this.questionService.create(body);
+    }
+
+    @Get('/')
+    get() {
+        return this.questionService.findAll({});
+    }
+
+    @Get('/:questionId')
+    getOne(@Param('questionId') questionId: string) {
+        return this.questionService.findById(questionId);
+    }
+
+    @Delete('/:questionId')
+    deleteOne(@Param('questionId') questionId: string) {
+        return this.questionService.delete(questionId);
     }
 }
