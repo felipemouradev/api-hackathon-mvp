@@ -1,5 +1,5 @@
 {
-  "name": "api-delta",
+  "name": "api-hackathon-mvp",
   "version": "0.0.1",
   "description": "Api Hackathon Mvp",
   "author": "Felipe Moura and Guilherme",
@@ -42,6 +42,7 @@
     "mongoose-timestamp": "^0.6.0",
     "nestjs-typegoose": "^5.1.2",
     "numeral": "^2.0.6",
+    "p-iteration": "^1.1.8",
     "paypal-rest-sdk": "^1.8.1",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",

@@ -6,6 +6,7 @@ import { BaseService } from 'src/Common/base/base.service';
 import { QuestionService } from '../question/question.service';
 import { Question, Answer } from '../question/models/question';
 import { CreateStudentRequest } from './interfaces/interfaces';
+import {mapSeries} from "p-iteration";
 
 @Injectable()
 export class StudentService extends BaseService<Student> {
@@ -54,5 +55,11 @@ export class StudentService extends BaseService<Student> {
             category: question.category,
         });
         return await this.update(studentId, student);
+    }
+
+    async createBulkAnswer(studentId: string, arrayResponses: CreateStudentRequest[]) {
+        return await mapSeries(arrayResponses, async (response)=> {
+            return await this.createAnswer(studentId, response);
+        })
     }
 }

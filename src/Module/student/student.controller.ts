@@ -35,4 +35,12 @@ export class StudentController {
     ) {
         return this.studentService.createAnswer(studentId, body);
     }
+
+    @Post('/:studentId/answersBulk')
+    async createBulkAnswer(
+        @Body() body: CreateStudentRequest[],
+        @Param('studentId') studentId: string,
+    ) {
+        return await this.studentService.createBulkAnswer(studentId, body);
+    }
 }
