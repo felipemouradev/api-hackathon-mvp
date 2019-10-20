@@ -42,7 +42,7 @@ export class Question extends Typegoose {
     @prop({required: true})
     text?: string;
 
-    @prop({required: true})
+    @prop({required: false})
     attachment?: string;
 
     @prop({enum: [

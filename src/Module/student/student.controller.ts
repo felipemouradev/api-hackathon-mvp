@@ -9,8 +9,8 @@ export class StudentController {
     ) {}
 
     @Post('/')
-    create(@Body() body: any) {
-        return this.studentService.create(body);
+    create(@Body() student: any) {
+        return this.studentService.createStudent(student);
     }
 
     @Get('/')
@@ -28,7 +28,7 @@ export class StudentController {
         return this.studentService.delete(studentId);
     }
 
-    @Post('/:studentId/answers')
+    @Post('/:studentId/answers-single')
     createAnswer(
         @Body() body: CreateStudentRequest,
         @Param('studentId') studentId: string,
@@ -36,11 +36,11 @@ export class StudentController {
         return this.studentService.createAnswer(studentId, body);
     }
 
-    @Post('/:studentId/answersBulk')
+    @Post('/:studentId/answers')
     async createBulkAnswer(
-        @Body() body: CreateStudentRequest[],
+        @Body() createStudentRequests: CreateStudentRequest[],
         @Param('studentId') studentId: string,
     ) {
-        return await this.studentService.createBulkAnswer(studentId, body);
+        return await this.studentService.createBulkAnswer(studentId, createStudentRequests);
     }
 }

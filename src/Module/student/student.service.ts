@@ -1,11 +1,11 @@
-import { Injectable } from '@nestjs/common';
-import { InjectModel } from 'nestjs-typegoose';
-import { ModelType, InstanceType } from 'typegoose';
-import { Student } from './models/student';
-import { BaseService } from 'src/Common/base/base.service';
-import { QuestionService } from '../question/question.service';
-import { Question, Answer } from '../question/models/question';
-import { CreateStudentRequest } from './interfaces/interfaces';
+import {Injectable} from '@nestjs/common';
+import {InjectModel} from 'nestjs-typegoose';
+import {ModelType, InstanceType, prop} from 'typegoose';
+import {ItinerarioType, Student} from './models/student';
+import {BaseService} from 'src/Common/base/base.service';
+import {QuestionService} from '../question/question.service';
+import {Question, Answer} from '../question/models/question';
+import {CreateStudentRequest} from './interfaces/interfaces';
 import {mapSeries} from "p-iteration";
 
 @Injectable()
@@ -35,9 +35,9 @@ export class StudentService extends BaseService<Student> {
         return xpQuantity >= this.gamificationLevels[level + 1];
     }
 
-    async createAnswer(studentId: string, body: CreateStudentRequest) {
+    async createAnswer(studentId: string, studentRequest: CreateStudentRequest) {
         const student: InstanceType<Student> = await this.findById(studentId);
-        const question: InstanceType<Question> = await this.questionService.findById(body.questionId);
+        const question: InstanceType<Question> = await this.questionService.findById(studentRequest.questionId);
         student.level = student.level.map(lvl => {
             if (lvl.itinerarioType === question.category) {
                 lvl.gamificationXp = lvl.gamificationXp + question.gamificationXp;
@@ -47,19 +47,51 @@ export class StudentService extends BaseService<Student> {
             }
             return lvl;
         });
-        const questionAnswer: Answer = question.questionResponse.possibleAnswers.find(answer => answer.id === body.questionAnswerId);
-        student.answeredQuestions.push({
-            questionId: question._id,
-            questionAnswerId: body.questionAnswerId,
-            weight: questionAnswer.weight,
-            category: question.category,
-        });
+        const questionAnswer = question.questionResponse.possibleAnswers.find(answer => String(answer.id) === String(studentRequest.questionAnswerId));
+        student.answeredQuestions = student.answeredQuestions ? student.answeredQuestions : [];
+        student.answeredQuestions = [
+            ...student.answeredQuestions,
+            {
+                questionId: question._id,
+                questionAnswerId: studentRequest.questionAnswerId,
+                weight: questionAnswer.weight | 1,
+                category: question.category,
+            }
+        ];
         return await this.update(studentId, student);
     }
 
     async createBulkAnswer(studentId: string, arrayResponses: CreateStudentRequest[]) {
-        return await mapSeries(arrayResponses, async (response)=> {
+        return await mapSeries(arrayResponses, async (response) => {
             return await this.createAnswer(studentId, response);
         })
+    }
+
+    async createStudent(student: any) {
+        const cienciasNatureza = {
+            itinerarioType: 'ciencias-natureza',
+            level: 0,
+            gamificationXp: 0,
+        };
+
+        const cienciasHumanas = {
+            itinerarioType: 'ciencias-humanas',
+            level: 0,
+            gamificationXp: 0,
+        };
+
+        const cienciasLinguagens = {
+            itinerarioType: 'ciencias-linguagens',
+            level: 0,
+            gamificationXp: 0,
+        };
+
+        const cienciasMatematicas = {
+            itinerarioType: 'ciencias-matematicas',
+            level: 0,
+            gamificationXp: 0,
+        };
+        student.level = [cienciasHumanas, cienciasLinguagens, cienciasMatematicas, cienciasNatureza];
+        return await this.create(student);
     }
 }
