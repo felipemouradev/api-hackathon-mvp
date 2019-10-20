@@ -35,6 +35,8 @@ export class QuestionResponse {
 }
 
 export class Question extends Typegoose {
+    @prop({required: true})
+    challengeId: string;
 
     @prop({required: true, enum: [QuestionType.image, QuestionType.text, QuestionType.video]})
     type: string;

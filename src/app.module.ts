@@ -5,6 +5,9 @@ import {ConfigModule} from './Common/config/config.module';
 import {QuestionModule} from './Module/question/question.module';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { StudentModule } from './Module/student/student.module';
+import { ChallengeModule } from './Module/challenge/challenge.module';
+import { ChallengeService } from './Module/challenge/challenge.service';
+import { ChallengeController } from './Module/challenge/challenge.controller';
 
 @Module({
     imports: [
@@ -15,9 +18,10 @@ import { StudentModule } from './Module/student/student.module';
         ConfigModule,
         QuestionModule,
         StudentModule,
+        ChallengeModule,
     ],
-    controllers: [AppController],
-    providers: [AppService],
+    controllers: [AppController, ChallengeController],
+    providers: [AppService, ChallengeService],
 })
 export class AppModule {
 }

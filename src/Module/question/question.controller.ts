@@ -6,22 +6,23 @@ import {
     Body,
     Delete,
 } from '@nestjs/common';
-import { QuestionService } from './question.service';
+import {QuestionService} from './question.service';
 
 @Controller('questions')
 export class QuestionController {
     constructor(
         private readonly questionService: QuestionService,
-    ) {}
+    ) {
+    }
 
     @Post('/')
     create(@Body() body: any) {
         return this.questionService.create(body);
     }
 
-    @Get('/')
-    get() {
-        return this.questionService.findAll({});
+    @Get('/:challengeId')
+    get(@Param('challengeId') challengeId: string) {
+        return this.questionService.findAll({challengeId});
     }
 
     @Get('/:questionId')
