@@ -34,7 +34,7 @@
     "csv-parser": "^2.2.0",
     "dotenv": "^6.2.0",
     "easy-sqs-forked": "^0.5.3",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.5.3",
     "jsonwebtoken": "^8.5.1",
     "live-plugin-manager": "^0.12.0",
     "mongodb-uri": "^0.9.7",
